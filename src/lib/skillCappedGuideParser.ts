@@ -202,21 +202,42 @@ function validateGuideSnapshot(raw: unknown): GuideSnapshot {
   return raw as GuideSnapshot;
 }
 
+/** Locate decoded Flight/RSC payload that contains serialized guide snapshots. */
+function findGuideFlightPayload(chunks: string[]): string | null {
+  const hasPair = (s: string) =>
+    s.includes('"buildData"') && s.includes('"aggData"');
+
+  const single = chunks.find((c) => hasPair(c));
+  if (single) return single;
+
+  const joined = chunks.join("\n");
+  return hasPair(joined) ? joined : null;
+}
+
+function liteGuideEmbeddedJsonMissing(html: string): boolean {
+  return /sc-public-guide-audit[\s\S]*?"build"\s*:\s*null/.test(html);
+}
+
 export function parseGuideFromHtml(
   html: string,
   championSlug: string,
   roleSlug: string,
 ): GuideSnapshot {
   const chunks = readRscChunks(html);
-  const big = chunks.find(
-    (c) => c.includes('"buildData"') && c.includes("aggData"),
-  );
-  if (!big) {
-    throw new GuideParseError("guide RSC chunk not found (buildData/aggData)");
+  const blob = findGuideFlightPayload(chunks);
+
+  if (!blob) {
+    const hint =
+      liteGuideEmbeddedJsonMissing(html)
+        ? " (Skill-Capped served a lite page without embedded build JSON — uncommon/off-meta builds sometimes omit it)"
+        : " (payload may split across Flight chunks; concat found no snapshot)";
+    throw new GuideParseError(
+      `guide RSC chunk not found (buildData/aggData)${hint}`,
+    );
   }
 
-  const buildData = extractJsonObject(big, "buildData");
-  const aggData = extractJsonObject(big, "aggData");
+  const buildData = extractJsonObject(blob, "buildData");
+  const aggData = extractJsonObject(blob, "aggData");
   if (!buildData || !aggData || typeof buildData !== "object") {
     throw new GuideParseError("failed to extract buildData from HTML");
   }
