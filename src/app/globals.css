@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+  --bg-root: #0d1117;
+  --bg-page: #0b0e13;
+  --gold-accent: #e8c34b;
+  --gold-muted: #957f57;
+  --gold-border: #d4af37;
+  --border-subtle: #1e252d;
+  --muted: #8b919a;
+}
+
+@theme inline {
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+}
+
+@keyframes op-ring-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes op-glow-pulse {
+  0%,
+  100% {
+    opacity: 0.92;
+    filter: brightness(1);
+  }
+  50% {
+    opacity: 1;
+    filter: brightness(1.07);
+  }
+}
+
+.op-ring-spin {
+  animation: op-ring-spin 12s linear infinite;
+}
+
+.op-glow-pulse {
+  animation: op-glow-pulse 3s ease-in-out infinite;
+}
+
+body {
+  background: var(--bg-page);
+  color: rgb(232, 232, 232);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #252d38;
+  border-radius: 3px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/** Skill-Capped-style headings: condensed sans, italic, tight tracking */
+.font-display {
+  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+}

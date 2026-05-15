@@ -1,0 +1,2065 @@
+{
+  "_meta": {
+    "generatedAt": "2026-05-15T16:14:55.310Z",
+    "source": "https://www.skill-capped.com/lol/guides/builds/shaco/jungle",
+    "ddragonPatch": "16.10.1"
+  },
+  "page": {
+    "championId": "Shaco",
+    "championName": "Shaco",
+    "championSlug": "shaco",
+    "role": "JUNGLE",
+    "roleSlug": "jungle",
+    "roleDisplay": "Jungle",
+    "patch": "26.10",
+    "tier": "A",
+    "stats": {
+      "winRate": 49.6,
+      "pickRate": 6.06,
+      "banRate": 24.47,
+      "games": 47297
+    },
+    "summonerSpells": [
+      "Smite",
+      "Ignite"
+    ]
+  },
+  "aggData": {
+    "winRate": 49.6,
+    "pickRate": 6.06,
+    "banRate": 24.47,
+    "games": 47297,
+    "summonerSpells": [
+      "Smite",
+      "Ignite"
+    ],
+    "startingItemsTop": [
+      {
+        "itemIds": [
+          "1102",
+          "2003",
+          "3340"
+        ],
+        "stats": {
+          "wins": 6004,
+          "numGames": 12074
+        }
+      },
+      {
+        "itemIds": [
+          "1101",
+          "2003",
+          "3340"
+        ],
+        "stats": {
+          "wins": 3119,
+          "numGames": 6381
+        }
+      },
+      {
+        "itemIds": [
+          "1102"
+        ],
+        "stats": {
+          "wins": 2547,
+          "numGames": 5117
+        }
+      }
+    ],
+    "buildTree": {
+      "2503": {
+        "id": 2503,
+        "numGames": 9140,
+        "wins": 4717,
+        "children": {
+          "6653": {
+            "id": 6653,
+            "numGames": 1249,
+            "wins": 680,
+            "children": {
+              "-1": {
+                "id": -1,
+                "numGames": 967,
+                "wins": 533,
+                "children": {
+                  "4645": {
+                    "id": 4645,
+                    "numGames": 246,
+                    "wins": 125
+                  }
+                }
+              }
+            }
+          },
+          "-1": {
+            "id": -1,
+            "numGames": 7538,
+            "wins": 3859,
+            "children": {
+              "3118": {
+                "id": 3118,
+                "numGames": 322,
+                "wins": 155
+              },
+              "4645": {
+                "id": 4645,
+                "numGames": 392,
+                "wins": 200
+              },
+              "6653": {
+                "id": 6653,
+                "numGames": 5873,
+                "wins": 3032,
+                "children": {
+                  "3089": {
+                    "id": 3089,
+                    "numGames": 365,
+                    "wins": 234
+                  },
+                  "3137": {
+                    "id": 3137,
+                    "numGames": 1480,
+                    "wins": 775
+                  },
+                  "3157": {
+                    "id": 3157,
+                    "numGames": 333,
+                    "wins": 194
+                  },
+                  "4645": {
+                    "id": 4645,
+                    "numGames": 1444,
+                    "wins": 791,
+                    "children": {
+                      "3089": {
+                        "id": 3089,
+                        "numGames": 226,
+                        "wins": 129
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "3142": {
+        "id": 3142,
+        "numGames": 8579,
+        "wins": 4103,
+        "children": {
+          "6676": {
+            "id": 6676,
+            "numGames": 1407,
+            "wins": 714,
+            "children": {
+              "3031": {
+                "id": 3031,
+                "numGames": 336,
+                "wins": 182
+              },
+              "-1": {
+                "id": -1,
+                "numGames": 805,
+                "wins": 395,
+                "children": {
+                  "3031": {
+                    "id": 3031,
+                    "numGames": 364,
+                    "wins": 186
+                  }
+                }
+              }
+            }
+          },
+          "6699": {
+            "id": 6699,
+            "numGames": 437,
+            "wins": 222,
+            "children": {
+              "-1": {
+                "id": -1,
+                "numGames": 238,
+                "wins": 118
+              }
+            }
+          },
+          "-1": {
+            "id": -1,
+            "numGames": 6246,
+            "wins": 2915,
+            "children": {
+              "3031": {
+                "id": 3031,
+                "numGames": 280,
+                "wins": 127
+              },
+              "6676": {
+                "id": 6676,
+                "numGames": 3689,
+                "wins": 1725,
+                "children": {
+                  "3031": {
+                    "id": 3031,
+                    "numGames": 1554,
+                    "wins": 781,
+                    "children": {
+                      "3036": {
+                        "id": 3036,
+                        "numGames": 520,
+                        "wins": 308
+                      }
+                    }
+                  },
+                  "3036": {
+                    "id": 3036,
+                    "numGames": 660,
+                    "wins": 320
+                  },
+                  "6699": {
+                    "id": 6699,
+                    "numGames": 519,
+                    "wins": 264
+                  }
+                }
+              },
+              "6699": {
+                "id": 6699,
+                "numGames": 1411,
+                "wins": 674,
+                "children": {
+                  "6676": {
+                    "id": 6676,
+                    "numGames": 436,
+                    "wins": 228
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "3179": {
+        "id": 3179,
+        "numGames": 3432,
+        "wins": 1767,
+        "children": {
+          "6699": {
+            "id": 6699,
+            "numGames": 976,
+            "wins": 521,
+            "children": {
+              "-1": {
+                "id": -1,
+                "numGames": 556,
+                "wins": 299
+              }
+            }
+          },
+          "-1": {
+            "id": -1,
+            "numGames": 2113,
+            "wins": 1075,
+            "children": {
+              "6699": {
+                "id": 6699,
+                "numGames": 1517,
+                "wins": 784,
+                "children": {
+                  "3036": {
+                    "id": 3036,
+                    "numGames": 274,
+                    "wins": 152
+                  },
+                  "3142": {
+                    "id": 3142,
+                    "numGames": 255,
+                    "wins": 137
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "6653": {
+        "id": 6653,
+        "numGames": 727,
+        "wins": 352,
+        "children": {
+          "-1": {
+            "id": -1,
+            "numGames": 575,
+            "wins": 277
+          }
+        }
+      },
+      "6676": {
+        "id": 6676,
+        "numGames": 1764,
+        "wins": 842,
+        "children": {
+          "-1": {
+            "id": -1,
+            "numGames": 1243,
+            "wins": 597,
+            "children": {
+              "3031": {
+                "id": 3031,
+                "numGames": 540,
+                "wins": 260,
+                "children": {
+                  "3036": {
+                    "id": 3036,
+                    "numGames": 244,
+                    "wins": 124
+                  }
+                }
+              },
+              "6699": {
+                "id": 6699,
+                "numGames": 258,
+                "wins": 130
+              }
+            }
+          }
+        }
+      },
+      "6697": {
+        "id": 6697,
+        "numGames": 2024,
+        "wins": 1004,
+        "children": {
+          "6676": {
+            "id": 6676,
+            "numGames": 297,
+            "wins": 141
+          },
+          "6699": {
+            "id": 6699,
+            "numGames": 280,
+            "wins": 140
+          },
+          "-1": {
+            "id": -1,
+            "numGames": 1046,
+            "wins": 520,
+            "children": {
+              "6676": {
+                "id": 6676,
+                "numGames": 346,
+                "wins": 161
+              },
+              "6699": {
+                "id": 6699,
+                "numGames": 353,
+                "wins": 189
+              }
+            }
+          }
+        }
+      },
+      "6698": {
+        "id": 6698,
+        "numGames": 1184,
+        "wins": 594,
+        "children": {
+          "-1": {
+            "id": -1,
+            "numGames": 838,
+            "wins": 418,
+            "children": {
+              "6676": {
+                "id": 6676,
+                "numGames": 303,
+                "wins": 150
+              },
+              "6699": {
+                "id": 6699,
+                "numGames": 290,
+                "wins": 148
+              }
+            }
+          }
+        }
+      },
+      "6699": {
+        "id": 6699,
+        "numGames": 10606,
+        "wins": 5192,
+        "children": {
+          "3179": {
+            "id": 3179,
+            "numGames": 693,
+            "wins": 382,
+            "children": {
+              "-1": {
+                "id": -1,
+                "numGames": 359,
+                "wins": 194
+              }
+            }
+          },
+          "6676": {
+            "id": 6676,
+            "numGames": 1602,
+            "wins": 763,
+            "children": {
+              "3031": {
+                "id": 3031,
+                "numGames": 397,
+                "wins": 204
+              },
+              "-1": {
+                "id": -1,
+                "numGames": 889,
+                "wins": 428,
+                "children": {
+                  "3031": {
+                    "id": 3031,
+                    "numGames": 397,
+                    "wins": 206
+                  }
+                }
+              }
+            }
+          },
+          "-1": {
+            "id": -1,
+            "numGames": 7105,
+            "wins": 3442,
+            "children": {
+              "3031": {
+                "id": 3031,
+                "numGames": 226,
+                "wins": 115
+              },
+              "3142": {
+                "id": 3142,
+                "numGames": 410,
+                "wins": 204
+              },
+              "3179": {
+                "id": 3179,
+                "numGames": 1551,
+                "wins": 786,
+                "children": {
+                  "3036": {
+                    "id": 3036,
+                    "numGames": 338,
+                    "wins": 183
+                  },
+                  "6676": {
+                    "id": 6676,
+                    "numGames": 281,
+                    "wins": 133
+                  }
+                }
+              },
+              "6676": {
+                "id": 6676,
+                "numGames": 3384,
+                "wins": 1607,
+                "children": {
+                  "3031": {
+                    "id": 3031,
+                    "numGames": 1231,
+                    "wins": 639,
+                    "children": {
+                      "3036": {
+                        "id": 3036,
+                        "numGames": 438,
+                        "wins": 252
+                      }
+                    }
+                  },
+                  "3036": {
+                    "id": 3036,
+                    "numGames": 829,
+                    "wins": 419,
+                    "children": {
+                      "3031": {
+                        "id": 3031,
+                        "numGames": 359,
+                        "wins": 204
+                      }
+                    }
+                  }
+                }
+              },
+              "6695": {
+                "id": 6695,
+                "numGames": 338,
+                "wins": 158
+              }
+            }
+          }
+        }
+      },
+      "-1": {
+        "id": -1,
+        "numGames": 6109,
+        "wins": 3012,
+        "children": {
+          "2503": {
+            "id": 2503,
+            "numGames": 1929,
+            "wins": 1019,
+            "children": {
+              "6653": {
+                "id": 6653,
+                "numGames": 1488,
+                "wins": 798,
+                "children": {
+                  "3137": {
+                    "id": 3137,
+                    "numGames": 393,
+                    "wins": 243
+                  },
+                  "4645": {
+                    "id": 4645,
+                    "numGames": 269,
+                    "wins": 154
+                  }
+                }
+              }
+            }
+          },
+          "3142": {
+            "id": 3142,
+            "numGames": 1155,
+            "wins": 565,
+            "children": {
+              "6676": {
+                "id": 6676,
+                "numGames": 631,
+                "wins": 300,
+                "children": {
+                  "3031": {
+                    "id": 3031,
+                    "numGames": 265,
+                    "wins": 144
+                  }
+                }
+              },
+              "6699": {
+                "id": 6699,
+                "numGames": 244,
+                "wins": 142
+              }
+            }
+          },
+          "3179": {
+            "id": 3179,
+            "numGames": 251,
+            "wins": 120
+          },
+          "6653": {
+            "id": 6653,
+            "numGames": 250,
+            "wins": 117
+          },
+          "6676": {
+            "id": 6676,
+            "numGames": 551,
+            "wins": 251
+          },
+          "6698": {
+            "id": 6698,
+            "numGames": 277,
+            "wins": 128
+          },
+          "6699": {
+            "id": 6699,
+            "numGames": 1232,
+            "wins": 602,
+            "children": {
+              "3179": {
+                "id": 3179,
+                "numGames": 256,
+                "wins": 121
+              },
+              "6676": {
+                "id": 6676,
+                "numGames": 535,
+                "wins": 273
+              }
+            }
+          }
+        }
+      }
+    },
+    "runesTree": {
+      "8100": {
+        "id": 8100,
+        "numGames": 38238,
+        "wins": 18766,
+        "children": {
+          "8128": {
+            "id": 8128,
+            "numGames": 6879,
+            "wins": 3246,
+            "children": {
+              "8126": {
+                "id": 8126,
+                "numGames": 3906,
+                "wins": 1838,
+                "children": {
+                  "8140": {
+                    "id": 8140,
+                    "numGames": 3585,
+                    "wins": 1683,
+                    "children": {
+                      "8106": {
+                        "id": 8106,
+                        "numGames": 3452,
+                        "wins": 1617,
+                        "children": {
+                          "8200": {
+                            "id": 8200,
+                            "numGames": 3389,
+                            "wins": 1584,
+                            "children": {
+                              "8236": {
+                                "id": 8236,
+                                "numGames": 3126,
+                                "wins": 1467,
+                                "children": {
+                                  "8210": {
+                                    "id": 8210,
+                                    "numGames": 3111,
+                                    "wins": 1461,
+                                    "children": {
+                                      "5005": {
+                                        "id": 5005,
+                                        "numGames": 2916,
+                                        "wins": 1356,
+                                        "children": {
+                                          "5008": {
+                                            "id": 5008,
+                                            "numGames": 2913,
+                                            "wins": 1355,
+                                            "children": {
+                                              "5001": {
+                                                "id": 5001,
+                                                "numGames": 2906,
+                                                "wins": 1352
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "8143": {
+                "id": 8143,
+                "numGames": 2931,
+                "wins": 1392,
+                "children": {
+                  "8140": {
+                    "id": 8140,
+                    "numGames": 2437,
+                    "wins": 1148,
+                    "children": {
+                      "8105": {
+                        "id": 8105,
+                        "numGames": 2120,
+                        "wins": 976,
+                        "children": {
+                          "8000": {
+                            "id": 8000,
+                            "numGames": 2033,
+                            "wins": 930,
+                            "children": {
+                              "8014": {
+                                "id": 8014,
+                                "numGames": 1935,
+                                "wins": 889,
+                                "children": {
+                                  "9104": {
+                                    "id": 9104,
+                                    "numGames": 1917,
+                                    "wins": 875,
+                                    "children": {
+                                      "5005": {
+                                        "id": 5005,
+                                        "numGames": 1907,
+                                        "wins": 870,
+                                        "children": {
+                                          "5008": {
+                                            "id": 5008,
+                                            "numGames": 1905,
+                                            "wins": 868,
+                                            "children": {
+                                              "5001": {
+                                                "id": 5001,
+                                                "numGames": 1900,
+                                                "wins": 866
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "9923": {
+            "id": 9923,
+            "numGames": 31223,
+            "wins": 15456,
+            "children": {
+              "8143": {
+                "id": 8143,
+                "numGames": 30804,
+                "wins": 15262,
+                "children": {
+                  "8137": {
+                    "id": 8137,
+                    "numGames": 8496,
+                    "wins": 4444,
+                    "children": {
+                      "8105": {
+                        "id": 8105,
+                        "numGames": 3770,
+                        "wins": 1953,
+                        "children": {
+                          "8000": {
+                            "id": 8000,
+                            "numGames": 1786,
+                            "wins": 926,
+                            "children": {
+                              "9104": {
+                                "id": 9104,
+                                "numGames": 956,
+                                "wins": 477
+                              }
+                            }
+                          },
+                          "8300": {
+                            "id": 8300,
+                            "numGames": 1529,
+                            "wins": 788
+                          }
+                        }
+                      },
+                      "8135": {
+                        "id": 8135,
+                        "numGames": 4051,
+                        "wins": 2139,
+                        "children": {
+                          "8300": {
+                            "id": 8300,
+                            "numGames": 2294,
+                            "wins": 1234,
+                            "children": {
+                              "8321": {
+                                "id": 8321,
+                                "numGames": 1304,
+                                "wins": 720
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "8140": {
+                    "id": 8140,
+                    "numGames": 21879,
+                    "wins": 10576,
+                    "children": {
+                      "8105": {
+                        "id": 8105,
+                        "numGames": 20598,
+                        "wins": 9935,
+                        "children": {
+                          "8000": {
+                            "id": 8000,
+                            "numGames": 19078,
+                            "wins": 9195,
+                            "children": {
+                              "8014": {
+                                "id": 8014,
+                                "numGames": 15718,
+                                "wins": 7553,
+                                "children": {
+                                  "9104": {
+                                    "id": 9104,
+                                    "numGames": 15666,
+                                    "wins": 7524,
+                                    "children": {
+                                      "5005": {
+                                        "id": 5005,
+                                        "numGames": 15574,
+                                        "wins": 7480,
+                                        "children": {
+                                          "5008": {
+                                            "id": 5008,
+                                            "numGames": 15547,
+                                            "wins": 7465,
+                                            "children": {
+                                              "5001": {
+                                                "id": 5001,
+                                                "numGames": 15372,
+                                                "wins": 7397
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "9104": {
+                                "id": 9104,
+                                "numGames": 3073,
+                                "wins": 1502,
+                                "children": {
+                                  "8014": {
+                                    "id": 8014,
+                                    "numGames": 2897,
+                                    "wins": 1414,
+                                    "children": {
+                                      "5005": {
+                                        "id": 5005,
+                                        "numGames": 2828,
+                                        "wins": 1376,
+                                        "children": {
+                                          "5008": {
+                                            "id": 5008,
+                                            "numGames": 2806,
+                                            "wins": 1368,
+                                            "children": {
+                                              "5001": {
+                                                "id": 5001,
+                                                "numGames": 2506,
+                                                "wins": 1198
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "8300": {
+                            "id": 8300,
+                            "numGames": 1118,
+                            "wins": 547
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "8200": {
+        "id": 8200,
+        "numGames": 8779,
+        "wins": 4555,
+        "children": {
+          "8229": {
+            "id": 8229,
+            "numGames": 3117,
+            "wins": 1667,
+            "children": {
+              "8224": {
+                "id": 8224,
+                "numGames": 2581,
+                "wins": 1384,
+                "children": {
+                  "8210": {
+                    "id": 8210,
+                    "numGames": 2534,
+                    "wins": 1362,
+                    "children": {
+                      "8236": {
+                        "id": 8236,
+                        "numGames": 2300,
+                        "wins": 1237,
+                        "children": {
+                          "8000": {
+                            "id": 8000,
+                            "numGames": 2147,
+                            "wins": 1160,
+                            "children": {
+                              "9105": {
+                                "id": 9105,
+                                "numGames": 1911,
+                                "wins": 1031,
+                                "children": {
+                                  "8017": {
+                                    "id": 8017,
+                                    "numGames": 1714,
+                                    "wins": 910,
+                                    "children": {
+                                      "5007": {
+                                        "id": 5007,
+                                        "numGames": 1541,
+                                        "wins": 822,
+                                        "children": {
+                                          "5008": {
+                                            "id": 5008,
+                                            "numGames": 1507,
+                                            "wins": 803
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "8992": {
+            "id": 8992,
+            "numGames": 5580,
+            "wins": 2843,
+            "children": {
+              "8224": {
+                "id": 8224,
+                "numGames": 4940,
+                "wins": 2522,
+                "children": {
+                  "8210": {
+                    "id": 8210,
+                    "numGames": 4784,
+                    "wins": 2458,
+                    "children": {
+                      "8236": {
+                        "id": 8236,
+                        "numGames": 4220,
+                        "wins": 2167,
+                        "children": {
+                          "8000": {
+                            "id": 8000,
+                            "numGames": 3671,
+                            "wins": 1886,
+                            "children": {
+                              "9105": {
+                                "id": 9105,
+                                "numGames": 3161,
+                                "wins": 1604,
+                                "children": {
+                                  "8017": {
+                                    "id": 8017,
+                                    "numGames": 2945,
+                                    "wins": 1496,
+                                    "children": {
+                                      "5007": {
+                                        "id": 5007,
+                                        "numGames": 2127,
+                                        "wins": 1107,
+                                        "children": {
+                                          "5008": {
+                                            "id": 5008,
+                                            "numGames": 2071,
+                                            "wins": 1076,
+                                            "children": {
+                                              "5001": {
+                                                "id": 5001,
+                                                "numGames": 1738,
+                                                "wins": 901
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "skillOrderTree": {
+      "1": {
+        "id": 1,
+        "numGames": 1051,
+        "wins": 489
+      },
+      "2": {
+        "id": 2,
+        "numGames": 46031,
+        "wins": 22955,
+        "children": {
+          "1": {
+            "id": 1,
+            "numGames": 41415,
+            "wins": 20791,
+            "children": {
+              "2": {
+                "id": 2,
+                "numGames": 5958,
+                "wins": 3184,
+                "children": {
+                  "3": {
+                    "id": 3,
+                    "numGames": 5942,
+                    "wins": 3171,
+                    "children": {
+                      "2": {
+                        "id": 2,
+                        "numGames": 4683,
+                        "wins": 2523,
+                        "children": {
+                          "4": {
+                            "id": 4,
+                            "numGames": 4663,
+                            "wins": 2515,
+                            "children": {
+                              "2": {
+                                "id": 2,
+                                "numGames": 3379,
+                                "wins": 1836,
+                                "children": {
+                                  "3": {
+                                    "id": 3,
+                                    "numGames": 3203,
+                                    "wins": 1745,
+                                    "children": {
+                                      "2": {
+                                        "id": 2,
+                                        "numGames": 2839,
+                                        "wins": 1546,
+                                        "children": {
+                                          "3": {
+                                            "id": 3,
+                                            "numGames": 2748,
+                                            "wins": 1514,
+                                            "children": {
+                                              "4": {
+                                                "id": 4,
+                                                "numGames": 2637,
+                                                "wins": 1457,
+                                                "children": {
+                                                  "3": {
+                                                    "id": 3,
+                                                    "numGames": 2547,
+                                                    "wins": 1422,
+                                                    "children": {
+                                                      "3": {
+                                                        "id": 3,
+                                                        "numGames": 2420,
+                                                        "wins": 1365
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "3": {
+                                "id": 3,
+                                "numGames": 1178,
+                                "wins": 617,
+                                "children": {
+                                  "3": {
+                                    "id": 3,
+                                    "numGames": 1006,
+                                    "wins": 517,
+                                    "children": {
+                                      "3": {
+                                        "id": 3,
+                                        "numGames": 954,
+                                        "wins": 494
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "3": {
+                        "id": 3,
+                        "numGames": 1091,
+                        "wins": 564,
+                        "children": {
+                          "4": {
+                            "id": 4,
+                            "numGames": 1082,
+                            "wins": 558
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "3": {
+                "id": 3,
+                "numGames": 34328,
+                "wins": 17002,
+                "children": {
+                  "1": {
+                    "id": 1,
+                    "numGames": 3391,
+                    "wins": 1552,
+                    "children": {
+                      "1": {
+                        "id": 1,
+                        "numGames": 2612,
+                        "wins": 1177,
+                        "children": {
+                          "4": {
+                            "id": 4,
+                            "numGames": 2600,
+                            "wins": 1169,
+                            "children": {
+                              "1": {
+                                "id": 1,
+                                "numGames": 2248,
+                                "wins": 1017,
+                                "children": {
+                                  "3": {
+                                    "id": 3,
+                                    "numGames": 1953,
+                                    "wins": 897,
+                                    "children": {
+                                      "1": {
+                                        "id": 1,
+                                        "numGames": 1818,
+                                        "wins": 847,
+                                        "children": {
+                                          "3": {
+                                            "id": 3,
+                                            "numGames": 1702,
+                                            "wins": 799,
+                                            "children": {
+                                              "4": {
+                                                "id": 4,
+                                                "numGames": 1652,
+                                                "wins": 776,
+                                                "children": {
+                                                  "3": {
+                                                    "id": 3,
+                                                    "numGames": 1560,
+                                                    "wins": 741,
+                                                    "children": {
+                                                      "3": {
+                                                        "id": 3,
+                                                        "numGames": 1431,
+                                                        "wins": 694
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "2": {
+                    "id": 2,
+                    "numGames": 13895,
+                    "wins": 7219,
+                    "children": {
+                      "2": {
+                        "id": 2,
+                        "numGames": 10550,
+                        "wins": 5498,
+                        "children": {
+                          "4": {
+                            "id": 4,
+                            "numGames": 10511,
+                            "wins": 5480,
+                            "children": {
+                              "2": {
+                                "id": 2,
+                                "numGames": 6758,
+                                "wins": 3537,
+                                "children": {
+                                  "3": {
+                                    "id": 3,
+                                    "numGames": 6057,
+                                    "wins": 3182,
+                                    "children": {
+                                      "2": {
+                                        "id": 2,
+                                        "numGames": 5338,
+                                        "wins": 2813,
+                                        "children": {
+                                          "3": {
+                                            "id": 3,
+                                            "numGames": 5120,
+                                            "wins": 2714,
+                                            "children": {
+                                              "4": {
+                                                "id": 4,
+                                                "numGames": 4884,
+                                                "wins": 2599,
+                                                "children": {
+                                                  "3": {
+                                                    "id": 3,
+                                                    "numGames": 4659,
+                                                    "wins": 2502,
+                                                    "children": {
+                                                      "3": {
+                                                        "id": 3,
+                                                        "numGames": 4402,
+                                                        "wins": 2417
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "3": {
+                                "id": 3,
+                                "numGames": 3349,
+                                "wins": 1745,
+                                "children": {
+                                  "3": {
+                                    "id": 3,
+                                    "numGames": 2819,
+                                    "wins": 1474,
+                                    "children": {
+                                      "3": {
+                                        "id": 3,
+                                        "numGames": 2645,
+                                        "wins": 1382,
+                                        "children": {
+                                          "3": {
+                                            "id": 3,
+                                            "numGames": 2539,
+                                            "wins": 1339,
+                                            "children": {
+                                              "4": {
+                                                "id": 4,
+                                                "numGames": 2196,
+                                                "wins": 1156,
+                                                "children": {
+                                                  "1": {
+                                                    "id": 1,
+                                                    "numGames": 1898,
+                                                    "wins": 992,
+                                                    "children": {
+                                                      "1": {
+                                                        "id": 1,
+                                                        "numGames": 1774,
+                                                        "wins": 941
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "3": {
+                        "id": 3,
+                        "numGames": 2937,
+                        "wins": 1516,
+                        "children": {
+                          "4": {
+                            "id": 4,
+                            "numGames": 2926,
+                            "wins": 1511,
+                            "children": {
+                              "3": {
+                                "id": 3,
+                                "numGames": 2313,
+                                "wins": 1190,
+                                "children": {
+                                  "3": {
+                                    "id": 3,
+                                    "numGames": 2094,
+                                    "wins": 1077,
+                                    "children": {
+                                      "3": {
+                                        "id": 3,
+                                        "numGames": 1975,
+                                        "wins": 1024,
+                                        "children": {
+                                          "1": {
+                                            "id": 1,
+                                            "numGames": 1692,
+                                            "wins": 885,
+                                            "children": {
+                                              "4": {
+                                                "id": 4,
+                                                "numGames": 1544,
+                                                "wins": 803,
+                                                "children": {
+                                                  "1": {
+                                                    "id": 1,
+                                                    "numGames": 1447,
+                                                    "wins": 760,
+                                                    "children": {
+                                                      "1": {
+                                                        "id": 1,
+                                                        "numGames": 1354,
+                                                        "wins": 723
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "3": {
+                    "id": 3,
+                    "numGames": 16912,
+                    "wins": 8165,
+                    "children": {
+                      "2": {
+                        "id": 2,
+                        "numGames": 1116,
+                        "wins": 566,
+                        "children": {
+                          "4": {
+                            "id": 4,
+                            "numGames": 1104,
+                            "wins": 560
+                          }
+                        }
+                      },
+                      "3": {
+                        "id": 3,
+                        "numGames": 15314,
+                        "wins": 7378,
+                        "children": {
+                          "4": {
+                            "id": 4,
+                            "numGames": 15261,
+                            "wins": 7346,
+                            "children": {
+                              "3": {
+                                "id": 3,
+                                "numGames": 14476,
+                                "wins": 6980,
+                                "children": {
+                                  "1": {
+                                    "id": 1,
+                                    "numGames": 13375,
+                                    "wins": 6435,
+                                    "children": {
+                                      "3": {
+                                        "id": 3,
+                                        "numGames": 12860,
+                                        "wins": 6211,
+                                        "children": {
+                                          "1": {
+                                            "id": 1,
+                                            "numGames": 12360,
+                                            "wins": 6012,
+                                            "children": {
+                                              "4": {
+                                                "id": 4,
+                                                "numGames": 11749,
+                                                "wins": 5693,
+                                                "children": {
+                                                  "1": {
+                                                    "id": 1,
+                                                    "numGames": 11203,
+                                                    "wins": 5449,
+                                                    "children": {
+                                                      "1": {
+                                                        "id": 1,
+                                                        "numGames": 10544,
+                                                        "wins": 5235
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "2": {
+                                    "id": 2,
+                                    "numGames": 1047,
+                                    "wins": 524,
+                                    "children": {
+                                      "3": {
+                                        "id": 3,
+                                        "numGames": 973,
+                                        "wins": 492
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "id": 3,
+            "numGames": 3950,
+            "wins": 1820,
+            "children": {
+              "1": {
+                "id": 1,
+                "numGames": 3646,
+                "wins": 1661,
+                "children": {
+                  "2": {
+                    "id": 2,
+                    "numGames": 1244,
+                    "wins": 592,
+                    "children": {
+                      "2": {
+                        "id": 2,
+                        "numGames": 1009,
+                        "wins": 485,
+                        "children": {
+                          "4": {
+                            "id": 4,
+                            "numGames": 1005,
+                            "wins": 482
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "3": {
+                    "id": 3,
+                    "numGames": 1953,
+                    "wins": 874,
+                    "children": {
+                      "3": {
+                        "id": 3,
+                        "numGames": 1727,
+                        "wins": 769,
+                        "children": {
+                          "4": {
+                            "id": 4,
+                            "numGames": 1725,
+                            "wins": 767,
+                            "children": {
+                              "3": {
+                                "id": 3,
+                                "numGames": 1613,
+                                "wins": 725,
+                                "children": {
+                                  "1": {
+                                    "id": 1,
+                                    "numGames": 1355,
+                                    "wins": 611,
+                                    "children": {
+                                      "3": {
+                                        "id": 3,
+                                        "numGames": 1283,
+                                        "wins": 586,
+                                        "children": {
+                                          "1": {
+                                            "id": 1,
+                                            "numGames": 1191,
+                                            "wins": 554,
+                                            "children": {
+                                              "4": {
+                                                "id": 4,
+                                                "numGames": 1149,
+                                                "wins": 537,
+                                                "children": {
+                                                  "1": {
+                                                    "id": 1,
+                                                    "numGames": 1083,
+                                                    "wins": 511,
+                                                    "children": {
+                                                      "1": {
+                                                        "id": 1,
+                                                        "numGames": 1014,
+                                                        "wins": 487
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "bootStats": {
+      "3006": {
+        "numGames": 16824,
+        "wins": 8147
+      },
+      "3009": {
+        "numGames": 9974,
+        "wins": 4935
+      },
+      "3020": {
+        "numGames": 3340,
+        "wins": 1679
+      },
+      "3047": {
+        "numGames": 517,
+        "wins": 272
+      },
+      "3111": {
+        "numGames": 427,
+        "wins": 214
+      },
+      "3158": {
+        "numGames": 10041,
+        "wins": 5156
+      }
+    },
+    "lateGameItems": {
+      "slot4": [
+        {
+          "itemId": "3031",
+          "wins": 3456,
+          "games": 6599
+        },
+        {
+          "itemId": "3036",
+          "wins": 2783,
+          "games": 5368
+        },
+        {
+          "itemId": "6676",
+          "wins": 1454,
+          "games": 2838
+        },
+        {
+          "itemId": "3137",
+          "wins": 1288,
+          "games": 2328
+        },
+        {
+          "itemId": "4645",
+          "wins": 1262,
+          "games": 2293
+        }
+      ],
+      "slot5": [
+        {
+          "itemId": "3036",
+          "wins": 2230,
+          "games": 3887
+        },
+        {
+          "itemId": "3031",
+          "wins": 1796,
+          "games": 3239
+        },
+        {
+          "itemId": "3089",
+          "wins": 568,
+          "games": 879
+        },
+        {
+          "itemId": "3157",
+          "wins": 483,
+          "games": 838
+        },
+        {
+          "itemId": "6699",
+          "wins": 428,
+          "games": 772
+        }
+      ],
+      "slot6": [
+        {
+          "itemId": "3026",
+          "wins": 550,
+          "games": 906
+        },
+        {
+          "itemId": "3031",
+          "wins": 471,
+          "games": 805
+        },
+        {
+          "itemId": "3036",
+          "wins": 369,
+          "games": 628
+        },
+        {
+          "itemId": "6699",
+          "wins": 241,
+          "games": 394
+        },
+        {
+          "itemId": "3142",
+          "wins": 207,
+          "games": 388
+        }
+      ]
+    },
+    "matchups": {
+      "hardest": [
+        {
+          "championId": "Nocturne",
+          "winRate": 45.3,
+          "games": 2254
+        },
+        {
+          "championId": "Shyvana",
+          "winRate": 46.7,
+          "games": 1781
+        },
+        {
+          "championId": "XinZhao",
+          "winRate": 47.2,
+          "games": 1408
+        },
+        {
+          "championId": "Rengar",
+          "winRate": 47.5,
+          "games": 1142
+        },
+        {
+          "championId": "Kayn",
+          "winRate": 47.9,
+          "games": 2514
+        },
+        {
+          "championId": "Briar",
+          "winRate": 47.9,
+          "games": 1503
+        }
+      ],
+      "best": [
+        {
+          "championId": "MasterYi",
+          "winRate": 52.1,
+          "games": 2121
+        },
+        {
+          "championId": "Vi",
+          "winRate": 51.9,
+          "games": 1164
+        },
+        {
+          "championId": "LeeSin",
+          "winRate": 51.5,
+          "games": 2820
+        },
+        {
+          "championId": "Khazix",
+          "winRate": 51.4,
+          "games": 1074
+        },
+        {
+          "championId": "Viego",
+          "winRate": 49.4,
+          "games": 2153
+        },
+        {
+          "championId": "Talon",
+          "winRate": 48.7,
+          "games": 1244
+        }
+      ]
+    }
+  },
+  "buildData": {
+    "skills": [
+      {
+        "insights": [
+          {
+            "reason": "Here's what you need to know to clear as Shaco:\\n\\n* Level 1: Run IMMEDIATELY to  <ScMonsterCampInline camp=\"raptors\" /> and place a box down ASAP at 0:25, then another at 0:40. You will start at <ScMonsterCampInline camp=\"red\" />\\n* As you do <ScMonsterCampInline camp=\"red\" />, the boxes will get the Big Raptor down to around 600 HP, and it will walk towards you. <ScSummonerInline summonerIdentifier=\"Smite\" /> it to get level 2.&#x20;\\n* Then throughout your clears, you can leave camps at 20-30% \\\\~ HP left with a Box to finish them off.&#x20;\\n* This is why we're putting 2 points in <ScAbilityInline_v2 spellKey=\"W\" />, so we can speed up our clear leaving camps early with boxes.&#x20;",
+            "title": "How to Clear",
+            "level": 1,
+            "spell": "w",
+            "id": "skill-w-lvl1"
+          },
+          {
+            "reason": "You ABSOLUTELY need to Backstab someone every time you <ScAbilityInline_v2 spellKey=\"Q\" />.\\n\\n* Your <ScAbilityInline_v2 spellKey=\"Q\" /> guarantees a crit with a 1.6x multiplier. This also buffs your backstab damage for a huge amount of burst on your first auto.\\n* If using <ScAbilityInline_v2 spellKey=\"Q\" /> over walls to move around the map, you don't need the stealth. Press B immediately to come out of stealth, letting your <ScAbilityInline_v2 spellKey=\"Q\" /> come off CD faster.&#x20;",
+            "level": 2,
+            "title": "Cancel Stealth, Get Q Back",
+            "spell": "q",
+            "id": "skill-q-lvl2"
+          },
+          {
+            "title": "Hidden broken mechanic",
+            "level": 4,
+            "reason": "Unironically, what every new Shaco player gets wrong is pressing their <ScAbilityInline_v2 spellKey=\"E\" /> because no one knows what the passive does.\\n\\n* Your <ScAbilityInline_v2 spellKey=\"E\" /> while off cooldown gives all your auto attacks a slow effect for 2 seconds. This is why <ScRuneInline runeIdentifier=\"Approach Velocity\" /> is OP.\\n* This also applies to your Clone. So as long as your <ScAbilityInline_v2 spellKey=\"E\" /> is up and your Clone is hitting someone, they are slowed, just tanking it, which is BROKEN combined with our earlier <ScRuneInline runeIdentifier=\"Hail of Blades\" /> tip, since the clone is just going bananas on them.\\n* Only use <ScAbilityInline_v2 spellKey=\"E\" /> to finish kills. Your <ScAbilityInline_v2 spellKey=\"E\" /> also benefits from your passive backstab, so it's better to <ScAbilityInline_v2 spellKey=\"E\" /> as they try to get away at low HP.",
+            "id": "skill-e-lvl4",
+            "spell": "e"
+          },
+          {
+            "reason": "$22",
+            "level": 6,
+            "title": "Most important r mechanics",
+            "spell": "r",
+            "id": "skill-r-lvl6"
+          }
+        ],
+        "order": [
+          "w",
+          "q",
+          "w",
+          "e",
+          "e",
+          "r",
+          "e",
+          "e",
+          "e",
+          "q",
+          "r",
+          "q",
+          "q",
+          "q",
+          "w",
+          "r",
+          "w",
+          "w"
+        ],
+        "name": "Default",
+        "priority": [
+          "e",
+          "q",
+          "w"
+        ]
+      }
+    ],
+    "runesv3": {
+      "stats": [
+        "",
+        "",
+        ""
+      ],
+      "secondary": {
+        "tree": "Inspiration",
+        "optionalRuneIds": [],
+        "activeRuneIds": [
+          8304,
+          8410
+        ]
+      },
+      "primary": {
+        "activeRuneIds": [
+          8143,
+          9923,
+          8137,
+          8135
+        ],
+        "optionalRuneIds": [],
+        "tree": "Domination"
+      },
+      "runeInsights": {
+        "insights": {
+          "approach-velocity": {
+            "tree": "Inspiration",
+            "insight": "Shaco has a permanent slow on his E, which means he can have 100% up-time from Approach Velocity.\\n\\n* Your clone can trigger it too. So even if you're not in range, if your clone is hitting them, it helps you catch up with the extra move-speed.&#x20;",
+            "runeId": 8410,
+            "insightTitle": "100% Uptime From E",
+            "id": "approach-velocity"
+          },
+          "hail-of-blades": {
+            "tree": "Domination",
+            "insight": "Shaco deals extra damage when striking enemies from the back. Hail of Blades pairs perfectly with his passive, to stealth in and try to burst with 3 super quick autos before they react and turn around.\\n\\n* The omega OP tech for <ScRuneInline runeIdentifier=\"Hail of Blades\" /> is to come out of stealth with a Q auto, activating Hail of Blades. Then press <ScAbilityInline_v2 spellKey=\"R\" />. Your clone will keep Hail of Blades' attack speed buff for the <span className=\"tip-highlight\">entire duration</span> it's out. If players ignore the clone, it will solo them with this buff.",
+            "runeId": 9923,
+            "insightTitle": "Your Clone Keeps the Buff",
+            "id": "hail-of-blades"
+          },
+          "sorcery-alt": {
+            "secondaryOption": {
+              "header": "MAX SCALING OPTION"
+            },
+            "insight": "Can swap to Gathering Storm and Absolute Focus as your secondary runes if you want to play for max scaling.&#x20;\\n\\n* Much better in lower elo brackets where games go longer, and the early game is a bit less important.",
+            "runeId": 8233,
+            "insightTitle": "Max Scaling Option",
+            "id": "sorcery-alt",
+            "tree": "Sorcery",
+            "runeId2": 8236
+          }
+        },
+        "insightsOrder": [
+          {
+            "id": "hail-of-blades"
+          },
+          {
+            "id": "approach-velocity"
+          },
+          {
+            "id": "sorcery-alt"
+          }
+        ]
+      }
+    },
+    "itemsAdvancedV1": {
+      "sectionTitle": "One-Trick Analysis",
+      "layouts": [
+        {
+          "position": 0,
+          "layoutId": "layout_1772074034344_76oku4r",
+          "title": "Core Build",
+          "type": "full-width",
+          "elementsTag": "Core Build",
+          "elements": [
+            {
+              "type": "item",
+              "itemId": "3179"
+            },
+            {
+              "itemId": "6699",
+              "type": "item"
+            },
+            {
+              "type": "item",
+              "itemId": "3006"
+            },
+            {
+              "type": "row-break"
+            },
+            {
+              "type": "item",
+              "itemId": "6695"
+            },
+            {
+              "type": "item",
+              "itemId": "6694"
+            },
+            {
+              "itemId": "3814",
+              "type": "item"
+            }
+          ],
+          "content": {
+            "content": "$23"
+          }
+        },
+        {
+          "title": "Crit Tank Buster",
+          "layoutId": "layout_1772090727072_uh7b31y",
+          "position": 1,
+          "elementsTag": "",
+          "type": "full-width",
+          "elements": [
+            {
+              "type": "item",
+              "itemId": "3179"
+            },
+            {
+              "itemId": "6699",
+              "type": "item"
+            },
+            {
+              "itemId": "3006",
+              "type": "item"
+            },
+            {
+              "type": "row-break"
+            },
+            {
+              "itemId": "3036",
+              "type": "item"
+            },
+            {
+              "type": "item",
+              "itemId": "3031"
+            },
+            {
+              "itemId": "3814",
+              "type": "item"
+            }
+          ],
+          "content": {
+            "contentTitle": "",
+            "content": "$24"
+          }
+        }
+      ]
+    },
+    "itemsSimpleV1": {
+      "itemGroups": [
+        {
+          "insight": "Sit on <ScRuneInline runeIdentifier=\"Magical Footwear\" /> until you complete <ScItemInline itemName=\"Umbral Glaive\" /> and <ScItemInline itemName=\"Voltaic Cyclosword\" /> then upgrade.\\n\\nCan swap to <ScItemInline itemName=\"Boots of Swiftness\" /> vs lots of slows, or <ScItemInline itemName=\"Mercury's Treads\" /> <ScItemInline itemName=\"Plated Steelcaps\" /> as needed.",
+          "insightHeader": "Why This Build?",
+          "id": "LI0Gk5zox5",
+          "items": [
+            {
+              "itemId": "3179",
+              "itemText": "Umbral Glaive"
+            },
+            {
+              "itemId": "6699",
+              "itemText": "Profane Hydra"
+            },
+            {
+              "itemId": "3006",
+              "itemText": "Berserker's Greaves"
+            }
+          ],
+          "title": "Core Build"
+        },
+        {
+          "title": "Fourth Item Options",
+          "insight": "&#x20;<ScItemInline itemName=\"Serylda's Grudge\" /> vs some armor like <ScItemInline itemName=\"Plated Steelcaps\" />\\n\\n<ScItemInline itemName=\"Lord Dominik's Regards\" /> vs very tanky teams. <ScItemInline itemName=\"Serpent's Fang\" /> vs shields.",
+          "insightHeader": "When to Build",
+          "id": "rssBygi5q6",
+          "items": [
+            {
+              "itemText": "Serylda's Grudge",
+              "itemId": "6694"
+            },
+            {
+              "itemId": "3036",
+              "itemText": "Lord Dominik's Regards"
+            },
+            {
+              "itemId": "6695",
+              "itemText": "Serpent's Fang"
+            }
+          ]
+        },
+        {
+          "title": "Fifth Item Options",
+          "insightHeader": "Situational Picks",
+          "items": [
+            {
+              "itemText": "Serylda's Grudge",
+              "itemId": "6694"
+            },
+            {
+              "itemText": "Lord Dominik's Regards",
+              "itemId": "3036"
+            },
+            {
+              "itemText": "Edge of Night",
+              "itemId": "3814"
+            }
+          ],
+          "id": "OZZjWR6L0e",
+          "insight": "You want % Armor Pen from <ScItemInline itemName=\"Serylda's Grudge\" /> or <ScItemInline itemName=\"Lord Dominik's Regards\" /> if you don't have it yet. <ScItemInline itemName=\"Edge of Night\" /> for survivability"
+        },
+        {
+          "title": "Sixth Item Options",
+          "insight": "<ScItemInline itemName=\"Edge of Night\" /> for defense, or <ScItemInline itemName=\"Infinity Edge\" /> for max burst. Crit build details below.",
+          "items": [
+            {
+              "itemText": "Edge of Night",
+              "itemId": "3814"
+            },
+            {
+              "itemText": "Voltaic Cyclosword",
+              "itemId": "3031"
+            }
+          ],
+          "insightHeader": "Late Game",
+          "id": "hrr8y9vWRr"
+        }
+      ],
+      "startingItems": {
+        "sectionExplainer": "",
+        "items": []
+      }
+    }
+  }
+}
