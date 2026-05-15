@@ -1,13 +1,7 @@
 import type { ChampEntry } from "@/types/tierlist";
 import type { ChampionAtlasData } from "@/types/tierlist";
 import { ChampionTile } from "@/components/tierlist/ChampionTile";
-import {
-  buildGuideHref,
-  championSlugFromName,
-  guideStorageKey,
-  skillCappedBuildUrl,
-} from "@/lib/guides";
-import { getGuideSnapshot } from "@/data/guideRegistry";
+import { buildGuideHref } from "@/lib/guides";
 import type { RoleRoute } from "@/lib/roles";
 
 type TierKey = "s" | "a" | "b" | "c";
@@ -166,12 +160,7 @@ export function StandardTierRow({
           }}
         >
           {entries.map((ch) => {
-            const slug = championSlugFromName(ch.championName);
-            const guideKey = guideStorageKey(slug, activeRole);
-            const hasGuide = Boolean(getGuideSnapshot(guideKey));
-            const href = hasGuide
-              ? buildGuideHref(ch.championName, activeRole)
-              : skillCappedBuildUrl(slug, activeRole);
+            const href = buildGuideHref(ch.championName, activeRole);
             return (
               <ChampionTile
                 key={`${tier}-${ch.championName}`}

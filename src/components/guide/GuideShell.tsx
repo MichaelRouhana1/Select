@@ -2,12 +2,7 @@
 
 import type { GuideSnapshot } from "@/types/guide";
 import type { RoleRoute } from "@/lib/roles";
-import {
-  guideStorageKey,
-  mergePageStats,
-  skillCappedBuildUrl,
-} from "@/lib/guides";
-import { getGuideSnapshot } from "@/data/guideRegistry";
+import { mergePageStats } from "@/lib/guides";
 import { GuidePatchProvider } from "@/contexts/GuidePatchContext";
 import { GuideHeader } from "@/components/guide/GuideHeader";
 import { GuideHeroBar } from "@/components/guide/GuideHeroBar";
@@ -32,11 +27,7 @@ export function GuideShell({
   tierListHref,
 }: GuideShellProps) {
   const championSlug = snapshot.page.championSlug;
-  const buildHref = (role: RoleRoute) => {
-    const key = guideStorageKey(championSlug, role);
-    if (getGuideSnapshot(key)) return `/builds/${championSlug}/${role}`;
-    return skillCappedBuildUrl(championSlug, role);
-  };
+  const buildHref = (role: RoleRoute) => `/builds/${championSlug}/${role}`;
   const page = mergePageStats(snapshot);
   const { buildData, aggData } = snapshot;
   const skills = buildData.skills[0];
@@ -76,6 +67,7 @@ export function GuideShell({
           {matchups ? (
             <GuideMatchups
               championName={page.championName}
+              matchupRole={activeRole}
               hardest={matchups.hardest}
               best={matchups.best}
             />

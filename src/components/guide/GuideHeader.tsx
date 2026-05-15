@@ -1,8 +1,13 @@
 "use client";
 
+import Link from "next/link";
 import { ROLE_ROUTES, getRoleLabel, type RoleRoute } from "@/lib/roles";
 
 const GOLD = "#E8C34B";
+
+function isHttpUrl(href: string) {
+  return href.startsWith("http://") || href.startsWith("https://");
+}
 
 type GuideHeaderProps = {
   activeRole: RoleRoute;
@@ -33,13 +38,23 @@ export function GuideHeader({
       >
         <div className="mx-auto flex w-full max-w-[1320px] items-center justify-between px-8">
           <div className="flex items-center gap-4">
-            <a
-              href={tierListHref}
-              className="whitespace-nowrap text-[14px] font-bold tracking-wider text-white"
-              style={{ letterSpacing: "0.08em" }}
-            >
-              SKILL CAPPED
-            </a>
+            {isHttpUrl(tierListHref) ? (
+              <a
+                href={tierListHref}
+                className="whitespace-nowrap text-[14px] font-bold tracking-wider text-white"
+                style={{ letterSpacing: "0.08em" }}
+              >
+                SKILL CAPPED
+              </a>
+            ) : (
+              <Link
+                href={tierListHref}
+                className="whitespace-nowrap text-[14px] font-bold tracking-wider text-white"
+                style={{ letterSpacing: "0.08em" }}
+              >
+                SKILL CAPPED
+              </Link>
+            )}
             <div className="h-5 w-px bg-[#252d38]" />
             <span className="text-[11px] font-semibold uppercase tracking-[0.05em] text-[#8b919a]">
               LEAGUE OF LEGENDS
@@ -74,12 +89,21 @@ export function GuideHeader({
         style={{ backgroundColor: "#14181f", borderBottom: "1px solid #1e252d" }}
       >
         <div className="mx-auto flex w-full max-w-[1320px] flex-wrap items-center gap-x-6 gap-y-2 px-8 py-2">
-          <a
-            href={tierListHref}
-            className="shrink-0 text-[11px] font-semibold uppercase tracking-[0.05em] text-[#8b919a] hover:text-white"
-          >
-            TIER LIST
-          </a>
+          {isHttpUrl(tierListHref) ? (
+            <a
+              href={tierListHref}
+              className="shrink-0 text-[11px] font-semibold uppercase tracking-[0.05em] text-[#8b919a] hover:text-white"
+            >
+              TIER LIST
+            </a>
+          ) : (
+            <Link
+              href={tierListHref}
+              className="shrink-0 text-[11px] font-semibold uppercase tracking-[0.05em] text-[#8b919a] hover:text-white"
+            >
+              TIER LIST
+            </Link>
+          )}
           <span className="shrink-0 text-[11px] font-semibold uppercase tracking-[0.05em] text-[#8b919a]">
             STATS
           </span>
@@ -106,25 +130,19 @@ export function GuideHeader({
         className="mx-auto flex w-full max-w-[1320px] gap-2 px-8 py-2"
         style={{ backgroundColor: "#0d1117", borderBottom: "1px solid #1e252d" }}
       >
-        {ROLE_ROUTES.map((role) => {
-          const href = buildHref(role);
-          const external = href.startsWith("http");
-          return (
-            <a
-              key={role}
-              href={href}
-              target={external ? "_blank" : undefined}
-              rel={external ? "noopener noreferrer" : undefined}
-              className={`rounded px-3 py-1 text-[11px] font-bold uppercase tracking-wide ${
-                role === activeRole
-                  ? "bg-[#252d38] text-[#E8C34B]"
-                  : "text-[#8b919a] hover:text-white"
-              }`}
-            >
-              {getRoleLabel(role)}
-            </a>
-          );
-        })}
+        {ROLE_ROUTES.map((role) => (
+          <Link
+            key={role}
+            href={buildHref(role)}
+            className={`rounded px-3 py-1 text-[11px] font-bold uppercase tracking-wide ${
+              role === activeRole
+                ? "bg-[#252d38] text-[#E8C34B]"
+                : "text-[#8b919a] hover:text-white"
+            }`}
+          >
+            {getRoleLabel(role)}
+          </Link>
+        ))}
       </div>
     </header>
   );

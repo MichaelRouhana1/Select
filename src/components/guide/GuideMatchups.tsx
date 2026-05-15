@@ -1,4 +1,7 @@
+import Link from "next/link";
 import type { MatchupEntry } from "@/types/guide";
+import type { RoleRoute } from "@/lib/roles";
+import { buildGuideHref } from "@/lib/guides";
 import { tierSnapshot } from "@/data/tierSnapshot";
 import { championSpriteStyle } from "@/lib/championSprite";
 import { formatSamples } from "@/lib/guideAggStats";
@@ -13,11 +16,13 @@ function Row({
   title,
   accent,
   entries,
+  matchupRole,
 }: {
   subtitle: string;
   title: string;
   accent: "bad" | "good";
   entries: MatchupEntry[];
+  matchupRole: RoleRoute;
 }) {
   const atlas = tierSnapshot.championAtlasData;
   const map = tierSnapshot.champNameToIdMap;
@@ -52,11 +57,14 @@ function Row({
           const atlasId = map[m.championId] ?? m.championId;
           const label = displayNameFromAggId(m.championId);
           const games = formatSamples(m.games);
+          const href = buildGuideHref(label, matchupRole);
 
           return (
-            <div
+            <Link
               key={m.championId}
-              className="flex min-w-[120px] flex-col items-center gap-3"
+              href={href}
+              aria-label={`${label} — ${m.winRate}% win rate, view build`}
+              className="flex min-w-[120px] flex-col items-center gap-3 rounded-lg outline-none ring-offset-2 ring-offset-[#121821] transition-opacity hover:opacity-95 focus-visible:ring-2 focus-visible:ring-[#d4af37]"
             >
               <div
                 className="rounded-full p-[3px]"
@@ -73,7 +81,7 @@ function Row({
               >
                 <div
                   role="img"
-                  aria-label={label}
+                  aria-hidden
                   className="overflow-hidden rounded-full bg-[#0d1117]"
                   style={{
                     width: 80,
@@ -89,7 +97,7 @@ function Row({
                 </p>
                 <p className="text-[12px] text-[#8b919a]">{games} games</p>
               </div>
-            </div>
+            </Link>
           );
         })}
       </div>
@@ -99,10 +107,12 @@ function Row({
 
 export function GuideMatchups({
   championName,
+  matchupRole,
   hardest,
   best,
 }: {
   championName: string;
+  matchupRole: RoleRoute;
   hardest: MatchupEntry[];
   best: MatchupEntry[];
 }) {
@@ -115,12 +125,14 @@ export function GuideMatchups({
           subtitle={`${championName} struggles most against these champions.`}
           accent="bad"
           entries={hardest}
+          matchupRole={matchupRole}
         />
         <Row
           title="Best Matchups"
           subtitle={`${championName} is strong against these champions.`}
           accent="good"
           entries={best}
+          matchupRole={matchupRole}
         />
       </div>
     </section>

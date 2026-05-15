@@ -1,7 +1,12 @@
 "use client";
 
+import Link from "next/link";
 import type { ChampionAtlasData } from "@/types/tierlist";
 import { championSpriteStyle } from "@/lib/championSprite";
+
+function isHttpUrl(href: string) {
+  return href.startsWith("http://") || href.startsWith("https://");
+}
 
 type ChampionTileProps = {
   championName: string;
@@ -25,18 +30,10 @@ export function ChampionTile({
   href,
 }: ChampionTileProps) {
   const roundedClass = rounded === "full" ? "rounded-full" : "rounded-md";
-  const isExternal = Boolean(href?.startsWith("http"));
+  const baseClass = `relative block shrink-0 cursor-pointer ${className}`;
 
-  return (
-    <a
-      href={href ?? "#"}
-      onClick={href ? undefined : (e) => e.preventDefault()}
-      target={isExternal ? "_blank" : undefined}
-      rel={isExternal ? "noopener noreferrer" : undefined}
-      className={`relative block shrink-0 cursor-pointer ${className}`}
-      aria-label={championName}
-      title={championName}
-    >
+  const inner = (
+    <>
       <div
         role="img"
         aria-label={championName}
@@ -55,6 +52,44 @@ export function ChampionTile({
           +
         </span>
       ) : null}
-    </a>
+    </>
+  );
+
+  if (!href) {
+    return (
+      <span
+        className={`${baseClass} cursor-default`}
+        aria-label={championName}
+        title={championName}
+      >
+        {inner}
+      </span>
+    );
+  }
+
+  if (isHttpUrl(href)) {
+    return (
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={baseClass}
+        aria-label={championName}
+        title={championName}
+      >
+        {inner}
+      </a>
+    );
+  }
+
+  return (
+    <Link
+      href={href}
+      className={baseClass}
+      aria-label={championName}
+      title={championName}
+    >
+      {inner}
+    </Link>
   );
 }

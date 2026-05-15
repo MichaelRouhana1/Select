@@ -83,6 +83,7 @@ export function TierListShell({
                 bans={filtered.bans}
                 atlas={atlas}
                 champNameToIdMap={map}
+                activeRole={activeRole}
               />
             </div>
 

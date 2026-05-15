@@ -17,14 +17,6 @@ export function buildGuideHref(championName: string, roleRoute: RoleRoute) {
   return `/builds/${slug}/${roleRoute}`;
 }
 
-/** Skill-Capped public build URL when no local guide snapshot exists. */
-export function skillCappedBuildUrl(
-  championSlug: string,
-  roleRoute: RoleRoute,
-): string {
-  return `https://www.skill-capped.com/lol/guides/builds/${championSlug}/${roleRoute}`;
-}
-
 export function parseBuildRoute(
   champion: string,
   rest?: string[],

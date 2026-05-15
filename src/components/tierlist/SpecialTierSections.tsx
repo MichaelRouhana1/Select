@@ -1,24 +1,28 @@
 import type { CSSProperties } from "react";
+import Link from "next/link";
 import type { ChampEntry } from "@/types/tierlist";
 import type { ChampionAtlasData } from "@/types/tierlist";
+import type { RoleRoute } from "@/lib/roles";
+import { buildGuideHref } from "@/lib/guides";
 import { championSpriteStyle } from "@/lib/championSprite";
 
 function OpPortrait({
   entry,
   atlas,
   champNameToIdMap,
+  activeRole,
 }: {
   entry: ChampEntry;
   atlas: ChampionAtlasData;
   champNameToIdMap: Record<string, string>;
+  activeRole: RoleRoute;
 }) {
   const id = champNameToIdMap[entry.championName];
   const sprite: CSSProperties = championSpriteStyle(atlas, id, 112);
 
   return (
-    <a
-      href="#"
-      onClick={(e) => e.preventDefault()}
+    <Link
+      href={buildGuideHref(entry.championName, activeRole)}
       className="relative block shrink-0"
       style={{ width: 120, height: 120 }}
       aria-label={entry.championName}
@@ -49,7 +53,7 @@ function OpPortrait({
           +
         </span>
       ) : null}
-    </a>
+    </Link>
   );
 }
 
@@ -58,11 +62,13 @@ function CircularStripPortrait({
   atlas,
   champNameToIdMap,
   variant,
+  activeRole,
 }: {
   entry: ChampEntry;
   atlas: ChampionAtlasData;
   champNameToIdMap: Record<string, string>;
   variant: "low" | "ban";
+  activeRole: RoleRoute;
 }) {
   const grad =
     variant === "low"
@@ -79,9 +85,8 @@ function CircularStripPortrait({
   const sprite: CSSProperties = championSpriteStyle(atlas, id, 84);
 
   return (
-    <a
-      href="#"
-      onClick={(e) => e.preventDefault()}
+    <Link
+      href={buildGuideHref(entry.championName, activeRole)}
       className="relative block shrink-0"
       style={{ width: 90, height: 90 }}
       aria-label={entry.championName}
@@ -104,7 +109,7 @@ function CircularStripPortrait({
           style={{ width: 84, height: 84, ...sprite }}
         />
       </div>
-    </a>
+    </Link>
   );
 }
 
@@ -184,10 +189,12 @@ function LowEloBlock({
   entries,
   atlas,
   champNameToIdMap,
+  activeRole,
 }: {
   entries: ChampEntry[];
   atlas: ChampionAtlasData;
   champNameToIdMap: Record<string, string>;
+  activeRole: RoleRoute;
 }) {
   if (entries.length === 0) return null;
   return (
@@ -217,6 +224,7 @@ function LowEloBlock({
               atlas={atlas}
               champNameToIdMap={champNameToIdMap}
               variant="low"
+              activeRole={activeRole}
             />
           ))}
         </div>
@@ -229,10 +237,12 @@ function BansBlock({
   entries,
   atlas,
   champNameToIdMap,
+  activeRole,
 }: {
   entries: ChampEntry[];
   atlas: ChampionAtlasData;
   champNameToIdMap: Record<string, string>;
+  activeRole: RoleRoute;
 }) {
   if (entries.length === 0) return null;
   return (
@@ -262,6 +272,7 @@ function BansBlock({
               atlas={atlas}
               champNameToIdMap={champNameToIdMap}
               variant="ban"
+              activeRole={activeRole}
             />
           ))}
         </div>
@@ -276,12 +287,14 @@ export function SpecialTierSections({
   bans,
   atlas,
   champNameToIdMap,
+  activeRole,
 }: {
   op: ChampEntry[];
   lowElo: ChampEntry[];
   bans: ChampEntry[];
   atlas: ChampionAtlasData;
   champNameToIdMap: Record<string, string>;
+  activeRole: RoleRoute;
 }) {
   const hasFeatured = op.length > 0 || lowElo.length > 0 || bans.length > 0;
   if (!hasFeatured) return null;
@@ -312,6 +325,7 @@ export function SpecialTierSections({
                     entry={e}
                     atlas={atlas}
                     champNameToIdMap={champNameToIdMap}
+                    activeRole={activeRole}
                   />
                 ))}
               </div>
@@ -325,11 +339,13 @@ export function SpecialTierSections({
             entries={lowElo}
             atlas={atlas}
             champNameToIdMap={champNameToIdMap}
+            activeRole={activeRole}
           />
           <BansBlock
             entries={bans}
             atlas={atlas}
             champNameToIdMap={champNameToIdMap}
+            activeRole={activeRole}
           />
         </div>
       </div>
