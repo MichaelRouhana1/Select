@@ -9,6 +9,7 @@
     "lint": "eslint",
     "sync-tierlist": "node scripts/sync-tierlist.mjs",
     "sync-guide": "node scripts/sync-guide.mjs",
+    "bulk-sync-guides": "node scripts/bulk-sync-guides.mjs",
     "extract-guide": "tsx scripts/extract-guide.ts",
     "rebuild-guide-registry": "node scripts/rebuild-guide-registry.mjs"
   },
